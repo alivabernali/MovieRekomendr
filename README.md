@@ -1,3 +1,3 @@
-# CourseProject
+# MovieRekomendr
 
-Please fork this repository and paste the github link of your fork on Microsoft CMT. Detailed instructions are on Coursera under Week 1: Course Project Overview/Week 9 Activities.
+A personable movie recomender system based on popular Letterboxd user reviews
