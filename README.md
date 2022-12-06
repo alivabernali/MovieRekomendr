@@ -8,7 +8,7 @@ To implement MovieRekomendr, we made use of various libraries. We primarily used
 
 ## Code Design:
 Our code is divided into two files:
-`get_reviews.py`: scrapes all movie reviews and rankings
+`get_reviews.py`: scrapes all movie reviews and rankings </br>
 `model.py`: trains model using most optimal classifier/movie review corpus AND ranks movies based on sentiment analysis
 
 ## Code Installation & Instructions:
