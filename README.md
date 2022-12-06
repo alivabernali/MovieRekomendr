@@ -12,7 +12,7 @@ Our code is divided into two files: </br>
 `model.py`: trains model using most optimal classifier/movie review corpus AND ranks movies based on sentiment analysis </br>
 ```mermaid
 graph LR
-A(get_reviews.py) -->>poopB(test.csv)-->A(model.py)
+A(get_reviews.py) -->B(test.csv)-->C(model.py)
 ```
 
 ## Code Installation & Instructions:
