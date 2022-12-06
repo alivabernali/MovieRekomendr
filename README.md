@@ -19,4 +19,4 @@ A(get_reviews.py)-->|output| B(test.csv)-->|input| C(model.py)
 1. From this repository, please download the following files: </br>
     `get_reviews.py` </br>
     `model.py` </br>
-    `test.csv` </br>
+    `finalized_model.sav` </br>
