@@ -16,7 +16,7 @@ A(get_reviews.py)-->|output| B(test.csv)-->|input| C(model.py)
 ```
 
 ## Code Installation & Instructions
-1.) From this repository, please download the following files:
-    -`get_reviews.py`
-    -`model.py`
-    -`test.csv`
+1.) From this repository, please download the following files: </br>
+    -`get_reviews.py` </br>
+    -`model.py` </br>
+    -`test.csv` </br>
