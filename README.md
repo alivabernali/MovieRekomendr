@@ -32,10 +32,7 @@ A(get_reviews.py)-->|output| B(test.csv)-->|input| C(model.py)-->|output| D(rank
     B. If you do not want to run the model again, please adjust the following line of code (93) in `model.py` from: </br>
 ```python
 model_Path = None
-```
-to 
-```python
 model_Path = 'finalized_model.sav'
 ```
-       The code will then use the already trained model that we have provided, to generate the ranked list. With either option, you will be presented with two ranked lists, when the code finishes running.
+The code will then use the already trained model that we have provided, to generate the ranked list. With either option, you will be presented with two ranked lists, when the code finishes running.
    
