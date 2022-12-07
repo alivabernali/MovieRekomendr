@@ -39,8 +39,8 @@ Chirag and Aliva primarily developed the model, experimented with various classi
     A. If you want to train the model, simply run: `python3 model.py`. </br>
     B. If you do not want to run the model again, please adjust the following line of code (93) in `model.py` from: </br>
 ```python
-model_Path = None
-model_Path = 'finalized_model.sav'
+model_path = None
+model_path = 'finalized_model.sav'
 ```
 The code will then use the already trained model that we have provided, to generate the ranked list. With either option, you will be presented with two ranked lists, when the code finishes running.
    
