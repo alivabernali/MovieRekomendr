@@ -27,4 +27,5 @@ A(get_reviews.py)-->|output| B(test.csv)-->|input| C(model.py)-->|output| D(rank
    SciKit-Learn: `pip install -U scikit-learn` </br>
    Pickle: `pip install pickle` </br>
 4. If you want to scrape the reviews yourself, simply run `python3 get_reviews.py`. This will save results in the file `test.csv`. The output file is also already saved in this repository, so this is not required unless you want to run the scraper yourself. If you would like to skip running the scraper, just make sure to download `test.csv`.
+5. Next, you have two options in running `model.py`. If you want to train the model (WARNING<span style="color:red">this wil)
    
