@@ -29,5 +29,6 @@ A(get_reviews.py)-->|output| B(test.csv)-->|input| C(model.py)-->|output| D(rank
 4. If you want to scrape the reviews yourself, simply run `python3 get_reviews.py`. This will save results in the file `test.csv`. The output file is also already saved in this repository, so this is not required unless you want to run the scraper yourself. If you would like to skip running the scraper, just make sure to download `test.csv`.
 5. Next, you have two options in running `model.py`. If you want to train the model (**Disclaimer:** The training process takes a long time as it is being ran on a very large dataset to ensure uttmost accuracy.) </br>
     A. If you want to train the model, simply run: `python3 model.py`. </br>
-    B. If you do not want to run the model again, please adjust the following line of code in `model.py`: </br>
+    B. If you do not want to run the model again, please adjust the following line of code (93) in `model.py` from: </br>
+       `model_path = None` to `model_path = finalized_model.sav`
    
