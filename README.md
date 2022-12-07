@@ -31,6 +31,7 @@ A(get_reviews.py)-->|output| B(test.csv)-->|input| C(model.py)-->|output| D(rank
     A. If you want to train the model, simply run: `python3 model.py`. </br>
     B. If you do not want to run the model again, please adjust the following line of code (93) in `model.py` from: </br>
        ```python 
-       model_path = None` to `model_path = finalized_model.sav``` </br>
+       model_path = None` to `model_path = finalized_model.sav
+       ``` </br>
        The code will then use the already trained model that we have provided, to generate the ranked list. With either option, you will be presented with two ranked lists, when the code finishes running.
    
