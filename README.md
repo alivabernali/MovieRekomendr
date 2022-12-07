@@ -31,9 +31,11 @@ A(get_reviews.py)-->|output| B(test.csv)-->|input| C(model.py)-->|output| D(rank
     A. If you want to train the model, simply run: `python3 model.py`. </br>
     B. If you do not want to run the model again, please adjust the following line of code (93) in `model.py` from: </br>
 ```python
-number = input("What is your favourite number?")
-print("It is", number + 1)  # error: Unsupported operand types for + ("str" and "int")
+model_Path = None
 ```
-</br>
+to 
+```python
+model_Path = 'finalized_model.sav'
+```
        The code will then use the already trained model that we have provided, to generate the ranked list. With either option, you will be presented with two ranked lists, when the code finishes running.
    
