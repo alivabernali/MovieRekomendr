@@ -15,6 +15,10 @@ graph LR
 A(get_reviews.py)-->|output| B(test.csv)-->|input| C(model.py)-->|output| D(ranked list: most popular) & E(ranked list: most discussed)
 ```
 
+## Work Distribution
+Shreya developed the web scraper using BeautifulSoup to pull all relevant reviews from Letterboxd.
+Chirag and Aliva primarily developed the model, experimented with various classifiers, and trained the models with different datasets using NLTK and SciKit-Learn.  
+
 ## Code Installation & Instructions
 2. Ensure that you have the latest version of Python3. We specifically used Python 3.11.0
 2. Clone/download this repository, and ensure you have successfully downloaded the following files: </br>
