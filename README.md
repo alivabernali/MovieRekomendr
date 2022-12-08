@@ -26,8 +26,8 @@ A(get_reviews.py)-->|output| B(data/big_test.csv)-->|input| C(model_lb.py)-->|ou
     `get_reviews.py` </br>
     `model_lb.py` </br>
     `data` </br>
-    `finalized_model_lib.sav` </br>
-    **DISCLAIMER:** Our models were too large to upload directly to Github. Please access via this Drive.
+    `finalized_model_lb.sav` </br>
+    **DISCLAIMER:** Our models were too large to upload directly to Github. Please access via this [Google Drive](https://drive.google.com/file/d/1oR7PJncHiPgGQ6GEy7X8ofXrqWHEGSZ1/view).
 3. Ensure that you have downloaded all dependencies: </br>
    BeautifulSoup: `pip install beautifulsoup4` </br>
    NLTK: `pip install --user -U nltk` </br>
@@ -41,5 +41,12 @@ A(get_reviews.py)-->|output| B(data/big_test.csv)-->|input| C(model_lb.py)-->|ou
 model_path = 'finalized_model_lb.sav'
 model_path = None
 ```
+**Note:** We have trained a few additional models if you would like to try! While the one used above is the most optimal, we have also provided the models for trial. Simply run step 5 for any of these options.
+To use the model trained solely from the iMDB dataset, download:
+[iMDB Model](https://drive.google.com/file/u/1/d/1dMikZwX3vlWu7prO6Ok9rT-tuOcqIixq/view?usp=share_link)
+`model_imdb.py`
+To use the model trained solely on the NLTK movie review corpus, download:
+[NLTK Corpus Model](https://drive.google.com/file/d/1fA0dHw-nZDpJUB81I5kiGD9FLAHyMnZk/view)
+`model.py`
 The code will then use the already trained model that we have provided, to generate the ranked list. With either option, you will be presented with two ranked lists, when the code finishes running.
    
