@@ -36,17 +36,18 @@ A(get_reviews.py)-->|output| B(data/test.csv)-->|input| C(model_lb.py)-->|output
 4. If you want to scrape the reviews yourself, simply run `python3 get_reviews.py`. This will save results as a CSV file. The output file is also already saved in this repository, so this is not required unless you want to run the scraper yourself. If you would like to skip running the scraper, just make sure you've downloaded the `data` directory.
 5. Next, you have two options in running `model_lb.py`. If you want to train the model (**Disclaimer:** The training process takes a long time as it is being ran on a very large dataset to ensure utmost accuracy.) </br>
     A. If you do not want to retrain the model again, simply run: `python3 model_lb.py`. </br>
-    B. If you DO want to retrain the model again, please adjust the following line of code (93) in `model_lb.py` from: </br>
+    B. If you DO want to retrain the model again, please adjust the following line of code in the main function of `model_lb.py` from: </br>
 ```python
 model_path = 'finalized_model_lb.sav'
 model_path = None
 ```
-**Note:** We have trained a few additional models if you would like to try! While the one used above is the most optimal, we have also provided the models for trial. Simply run step 5 for any of these options.
-To use the model trained solely from the iMDB dataset, download:
-[iMDB Model](https://drive.google.com/file/u/1/d/1dMikZwX3vlWu7prO6Ok9rT-tuOcqIixq/view?usp=share_link)
-`model_imdb.py`
-To use the model trained solely on the NLTK movie review corpus, download:
-[NLTK Corpus Model](https://drive.google.com/file/d/1fA0dHw-nZDpJUB81I5kiGD9FLAHyMnZk/view)
-`model.py`
+**Note:** We have trained a few additional models if you would like to try! While the one used above is the most optimal, we have also provided the models for trial. Simply run step 6 for any of these options. </br>
+To use the model trained solely from the iMDB dataset, download: </br>
+[iMDB Model](https://drive.google.com/file/u/1/d/1dMikZwX3vlWu7prO6Ok9rT-tuOcqIixq/view?usp=share_link) </br>
+Run `model_imdb.py` </br>
+To use the model trained solely on the NLTK movie review corpus, download: </br>
+[NLTK Corpus Model](https://drive.google.com/file/d/1fA0dHw-nZDpJUB81I5kiGD9FLAHyMnZk/view) </br>
+Run `model.py` </br>
+As mentioned above, if you want to retrain the model adjust the line specified to the corresponding model path.
 The code will then use the already trained model that we have provided, to generate the ranked list. With either option, you will be presented with two ranked lists, when the code finishes running.
    
