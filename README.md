@@ -21,22 +21,23 @@ A(get_reviews.py)-->|output| B(test.csv)-->|input| C(model.py)-->|output| D(rank
 
 ## Code Installation & Instructions
 2. Ensure that you have the latest version of Python3. We specifically used Python 3.11.0
-2. Clone/download this repository, and ensure you have successfully downloaded the following files: </br>
+2. Clone/download this repository, and ensure you have successfully downloaded the following files/directories: </br>
     `get_reviews.py` </br>
-    `model.py` </br>
-    `finalized_model.sav` </br>
+    `model_lb.py` </br>
+    `finalized_model_lib.sav` </br>
+    `data` </br>
 3. Ensure that you have downloaded all dependencies: </br>
    BeautifulSoup: `pip install beautifulsoup4` </br>
    NLTK: `pip install --user -U nltk` </br>
    SciKit-Learn: `pip install -U scikit-learn` </br>
    Pickle: `pip install pickle` </br>
-4. If you want to scrape the reviews yourself, simply run `python3 get_reviews.py`. This will save results in the file `test.csv`. The output file is also already saved in this repository, so this is not required unless you want to run the scraper yourself. If you would like to skip running the scraper, just make sure to download `test.csv`.
-5. Next, you have two options in running `model.py`. If you want to train the model (**Disclaimer:** The training process takes a long time as it is being ran on a very large dataset to ensure uttmost accuracy.) </br>
+4. If you want to scrape the reviews yourself, simply run `python3 get_reviews.py`. This will save results in the file `test.csv`. The output file is also already saved in this repository, so this is not required unless you want to run the scraper yourself. If you would like to skip running the scraper, just make sure you've downloaded the `data` directory.
+5. Next, you have two options in running `model_lib.py`. If you want to train the model (**Disclaimer:** The training process takes a long time as it is being ran on a very large dataset to ensure uttmost accuracy.) </br>
     A. If you want to train the model, simply run: `python3 model.py`. </br>
     B. If you do not want to run the model again, please adjust the following line of code (93) in `model.py` from: </br>
 ```python
 model_path = None
-model_path = 'finalized_model.sav'
+model_path = 'finalized_model_lib.sav'
 ```
 The code will then use the already trained model that we have provided, to generate the ranked list. With either option, you will be presented with two ranked lists, when the code finishes running.
    
