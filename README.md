@@ -27,7 +27,7 @@ A(get_reviews.py)-->|output| B(data/big_test.csv)-->|input| C(model_lb.py)-->|ou
     `model_lb.py` </br>
     `data` </br>
     `finalized_model_lib.sav` </br>
-    `DISCLAIMER: Our models were too large to upload directly to Github. Please access via this Drive.`
+    **DISCLAIMER:** Our models were too large to upload directly to Github. Please access via this Drive.
 3. Ensure that you have downloaded all dependencies: </br>
    BeautifulSoup: `pip install beautifulsoup4` </br>
    NLTK: `pip install --user -U nltk` </br>
