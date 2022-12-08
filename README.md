@@ -16,7 +16,7 @@ Our code is divided into two main Python files: </br>
 `model.py`: trains model using most optimal classifier AND ranks movies based on sentiment analysis </br>
 ```mermaid
 graph LR
-A(get_reviews.py)-->|output| B(test.csv)-->|input| C(model.py)-->|output| D(ranked list: most popular) & E(ranked list: most discussed)
+A(get_reviews.py)-->|output| B(data/big_test.csv)-->|input| C(model.py)-->|output| D(ranked list: most popular) & E(ranked list: most discussed)
 ```
 
 ## Code Installation & Instructions
@@ -31,7 +31,7 @@ A(get_reviews.py)-->|output| B(test.csv)-->|input| C(model.py)-->|output| D(rank
    NLTK: `pip install --user -U nltk` </br>
    SciKit-Learn: `pip install -U scikit-learn` </br>
    Pickle: `pip install pickle` </br>
-4. If you want to scrape the reviews yourself, simply run `python3 get_reviews.py`. This will save results in the file `test.csv`. The output file is also already saved in this repository, so this is not required unless you want to run the scraper yourself. If you would like to skip running the scraper, just make sure you've downloaded the `data` directory.
+4. If you want to scrape the reviews yourself, simply run `python3 get_reviews.py`. This will save results as a CSV file. The output file is also already saved in this repository, so this is not required unless you want to run the scraper yourself. If you would like to skip running the scraper, just make sure you've downloaded the `data` directory.
 5. Next, you have two options in running `model_lib.py`. If you want to train the model (**Disclaimer:** The training process takes a long time as it is being ran on a very large dataset to ensure uttmost accuracy.) </br>
     A. If you want to train the model, simply run: `python3 model.py`. </br>
     B. If you do not want to run the model again, please adjust the following line of code (93) in `model.py` from: </br>
