@@ -25,8 +25,9 @@ A(get_reviews.py)-->|output| B(data/big_test.csv)-->|input| C(model_lb.py)-->|ou
 2. Clone/download this repository, and ensure you have successfully downloaded the following files/directories: </br>
     `get_reviews.py` </br>
     `model_lb.py` </br>
-    `finalized_model_lib.sav` </br>
     `data` </br>
+    `finalized_model_lib.sav` </br>
+    `DISCLAIMER: Our models were too large to upload directly to Github. Please access via this Drive.`
 3. Ensure that you have downloaded all dependencies: </br>
    BeautifulSoup: `pip install beautifulsoup4` </br>
    NLTK: `pip install --user -U nltk` </br>
